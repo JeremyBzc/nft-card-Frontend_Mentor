@@ -1,0 +1,12 @@
+{
+  "name": "nft-card-frontend_mentor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:style.css"
+    
+  },
+  "author": "JérémyBzc",
+  "license": "ISC"
+}

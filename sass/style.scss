@@ -1,0 +1,19 @@
+@import "libs/reset.scss";
+
+// VARIABLES //
+// Colors //
+
+$white: hsl(0, 0%, 100%);
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$main-bg: hsl(217, 54%, 11%);
+$card: hsl(216, 50%, 16%);
+$line-card: hsl(215, 32%, 27%);
+
+//Typography
+
+$paragraph: 18px;
+
+body {
+  background: $main-bg;
+}
