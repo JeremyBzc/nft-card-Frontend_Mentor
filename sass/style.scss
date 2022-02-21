@@ -10,6 +10,8 @@ $cyan: hsl(178, 100%, 50%);
 $main-bg: hsl(217, 54%, 11%);
 $card: hsl(216, 50%, 16%);
 $line-card: hsl(215, 32%, 27%);
+
+// MIXIN //
 // Adjustement //
 
 @mixin Flex-center {
@@ -21,11 +23,12 @@ $line-card: hsl(215, 32%, 27%);
   margin-bottom: 12px;
 }
 
-//Typography
+//Typography //
 
 $paragraph: 18px;
 $main-font: "Outfit";
 
+// TAGS //
 body {
   font-family: $main-font, Arial, sans-serif;
   background: $main-bg;
@@ -38,6 +41,9 @@ h1 {
 p {
   font-weight: 300;
 }
+a {
+  text-decoration: none;
+}
 h1,
 p {
   @include Margin-bot();
@@ -49,29 +55,49 @@ main {
   margin: 0;
   height: 750px;
 }
-
-.container {
+// CLASS //
+.card {
   @include Flex-center();
   width: 330px;
   height: 550px;
   border-radius: 15px;
   background-color: $card;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.14);
-  .container__nft {
+  &__img {
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover {
+      opacity: 0.3;
+    }
 
-    &--img {
+    &--nft {
       width: 300px;
       height: 300px;
       border-radius: 8px;
+      z-index: 2;
+    }
+    &--view {
+      background-color: $cyan;
+      padding: 124px;
+      border-radius: 8px;
+      position: absolute;
+      z-index: 1;
+      :hover {
+        opacity: 1;
+      }
     }
   }
-  .container__text {
+  .card__text {
     padding: 20px;
     .soft-blue {
       color: $softBlue;
     }
     .cyan {
+      color: $cyan;
+    }
+    .active-cyan:hover {
       color: $cyan;
     }
 
