@@ -92,6 +92,11 @@ p {
   font-weight: 300;
 }
 
+h1,
+p {
+  margin-bottom: 12px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -114,42 +119,47 @@ main {
 }
 .container .container__nft {
   padding: 15px;
-  display: flex;
-  align-content: space-between;
 }
-.container .container__nft .img-nft {
+.container .container__nft--img {
   width: 300px;
   height: 300px;
   border-radius: 8px;
 }
 .container .container__text {
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 }
 .container .container__text .soft-blue {
   color: #8bacda;
 }
-.container .container__text .container__info {
+.container .container__text .cyan {
+  color: #00fff7;
+}
+.container .container__text .info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
-.container .container__text .container__info span img {
-  margin-right: 10px;
+.container .container__text .info__detail {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
-.container .container__text .container__info .cyan {
-  color: #00fff7;
+.container .container__text .info__detail img {
+  margin: 0px 10px -2px 0px;
 }
 .container .container__text .author {
   display: flex;
-  border-top: 2px solid #2f415b;
+  border-top: 1px solid #2f415b;
   height: 20px;
+  padding-top: 15px;
 }
-.container .container__text .author img {
+.container .container__text .author__img {
   height: 25px;
   border: 1px solid white;
   border-radius: 100%;
   margin-right: 10px;
+}
+.container .container__text .author__name {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
