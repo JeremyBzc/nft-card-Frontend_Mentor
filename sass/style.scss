@@ -106,11 +106,13 @@ main {
       justify-content: space-between;
       margin-bottom: 15px;
       &__detail {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 600;
+        vertical-align: baseline;
       }
       &__detail img {
-        margin: 0px 10px -2px 0px;
+        margin-right: 10px;
+        vertical-align: top;
       }
     }
     .author {

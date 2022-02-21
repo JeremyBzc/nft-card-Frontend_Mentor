@@ -164,11 +164,13 @@ main {
   margin-bottom: 15px;
 }
 .card .card__text .info__detail {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  vertical-align: baseline;
 }
 .card .card__text .info__detail img {
-  margin: 0px 10px -2px 0px;
+  margin-right: 10px;
+  vertical-align: top;
 }
 .card .card__text .author {
   display: flex;
